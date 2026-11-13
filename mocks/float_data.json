@@ -1,0 +1,458 @@
+{
+  "_readme": "Fake Float data for the practice mock. Projects 301 and 302 link to HubSpot deals 9001 and 9002 through project_code. Project 303 is internal and has no deal. Field names follow Float's API v3; check them against Float's docs at milestone 7. In this mock, status 2 means confirmed and budget_type 1 means a total-hours budget.",
+  "clients": [
+    {
+      "client_id": 201,
+      "name": "Acme Research Ltd"
+    },
+    {
+      "client_id": 202,
+      "name": "Northwind Health"
+    }
+  ],
+  "people": [
+    {
+      "people_id": 1,
+      "name": "Priya Shah",
+      "job_title": "Research Director",
+      "active": 1
+    },
+    {
+      "people_id": 2,
+      "name": "Tom Hughes",
+      "job_title": "Senior Research Executive",
+      "active": 1
+    },
+    {
+      "people_id": 3,
+      "name": "Aisha Khan",
+      "job_title": "Research Executive",
+      "active": 1
+    },
+    {
+      "people_id": 4,
+      "name": "Dan Lee",
+      "job_title": "Data Analyst",
+      "active": 1
+    }
+  ],
+  "projects": [
+    {
+      "project_id": 301,
+      "name": "Acme - Consumer attitudes study",
+      "project_code": "9001",
+      "client_id": 201,
+      "status": 2,
+      "budget_type": 1,
+      "budget_total": 160,
+      "start_date": "2026-11-02",
+      "end_date": "2027-02-03",
+      "active": 1,
+      "tags": [
+        "survey"
+      ]
+    },
+    {
+      "project_id": 302,
+      "name": "Northwind - Patient experience tracker",
+      "project_code": "9002",
+      "client_id": 202,
+      "status": 2,
+      "budget_type": 1,
+      "budget_total": 245,
+      "start_date": "2026-11-16",
+      "end_date": "2027-03-12",
+      "active": 1,
+      "tags": [
+        "tracker"
+      ]
+    },
+    {
+      "project_id": 303,
+      "name": "Internal - Methods training",
+      "project_code": null,
+      "client_id": null,
+      "status": 2,
+      "budget_type": 0,
+      "budget_total": null,
+      "start_date": "2026-11-19",
+      "end_date": "2026-11-20",
+      "active": 1,
+      "tags": [
+        "internal"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "phase_id": 401,
+      "project_id": 301,
+      "name": "Set-up",
+      "start_date": "2026-11-02",
+      "end_date": "2026-11-06",
+      "budget": 30
+    },
+    {
+      "phase_id": 402,
+      "project_id": 301,
+      "name": "Fieldwork",
+      "start_date": "2026-11-09",
+      "end_date": "2026-12-04",
+      "budget": 60
+    },
+    {
+      "phase_id": 403,
+      "project_id": 301,
+      "name": "Analysis and reporting",
+      "start_date": "2026-12-07",
+      "end_date": "2027-02-03",
+      "budget": 70
+    },
+    {
+      "phase_id": 404,
+      "project_id": 302,
+      "name": "Tracker set-up",
+      "start_date": "2026-11-16",
+      "end_date": "2026-11-27",
+      "budget": 45
+    },
+    {
+      "phase_id": 405,
+      "project_id": 302,
+      "name": "Monthly waves",
+      "start_date": "2026-11-30",
+      "end_date": "2027-03-12",
+      "budget": 200
+    }
+  ],
+  "milestones": [
+    {
+      "milestone_id": 501,
+      "project_id": 301,
+      "phase_id": 403,
+      "name": "Final report delivery",
+      "date": "2027-01-29",
+      "end_date": "2027-01-29"
+    },
+    {
+      "milestone_id": 502,
+      "project_id": 302,
+      "phase_id": 405,
+      "name": "Wave 1 results",
+      "date": "2026-12-18",
+      "end_date": "2026-12-18"
+    },
+    {
+      "milestone_id": 503,
+      "project_id": 302,
+      "phase_id": 405,
+      "name": "Final wave report",
+      "date": "2027-03-12",
+      "end_date": "2027-03-12"
+    }
+  ],
+  "tasks": [
+    {
+      "task_id": 601,
+      "project_id": 301,
+      "phase_id": 401,
+      "people_id": 2,
+      "start_date": "2026-11-02",
+      "end_date": "2026-11-06",
+      "hours": 4,
+      "name": ""
+    },
+    {
+      "task_id": 602,
+      "project_id": 301,
+      "phase_id": 401,
+      "people_id": 3,
+      "start_date": "2026-11-02",
+      "end_date": "2026-11-06",
+      "hours": 2,
+      "name": ""
+    },
+    {
+      "task_id": 603,
+      "project_id": 301,
+      "phase_id": 402,
+      "people_id": 3,
+      "start_date": "2026-11-09",
+      "end_date": "2026-12-04",
+      "hours": 2,
+      "name": ""
+    },
+    {
+      "task_id": 604,
+      "project_id": 301,
+      "phase_id": 402,
+      "people_id": 4,
+      "start_date": "2026-11-09",
+      "end_date": "2026-12-04",
+      "hours": 1,
+      "name": ""
+    },
+    {
+      "task_id": 605,
+      "project_id": 301,
+      "phase_id": 403,
+      "people_id": 4,
+      "start_date": "2026-12-07",
+      "end_date": "2026-12-18",
+      "hours": 1,
+      "name": ""
+    },
+    {
+      "task_id": 606,
+      "project_id": 301,
+      "phase_id": 403,
+      "people_id": 2,
+      "start_date": "2026-12-07",
+      "end_date": "2027-02-03",
+      "hours": 1,
+      "name": ""
+    },
+    {
+      "task_id": 607,
+      "project_id": 301,
+      "phase_id": 403,
+      "people_id": 1,
+      "start_date": "2027-01-18",
+      "end_date": "2027-02-03",
+      "hours": 1,
+      "name": ""
+    },
+    {
+      "task_id": 608,
+      "project_id": 302,
+      "phase_id": 404,
+      "people_id": 2,
+      "start_date": "2026-11-16",
+      "end_date": "2026-11-27",
+      "hours": 3,
+      "name": ""
+    },
+    {
+      "task_id": 609,
+      "project_id": 302,
+      "phase_id": 404,
+      "people_id": 3,
+      "start_date": "2026-11-16",
+      "end_date": "2026-11-27",
+      "hours": 2,
+      "name": ""
+    },
+    {
+      "task_id": 610,
+      "project_id": 302,
+      "phase_id": 405,
+      "people_id": 4,
+      "start_date": "2026-12-01",
+      "end_date": "2027-03-12",
+      "hours": 2,
+      "name": ""
+    },
+    {
+      "task_id": 611,
+      "project_id": 302,
+      "phase_id": 405,
+      "people_id": 1,
+      "start_date": "2027-03-01",
+      "end_date": "2027-03-12",
+      "hours": 1,
+      "name": ""
+    },
+    {
+      "task_id": 612,
+      "project_id": 303,
+      "phase_id": null,
+      "people_id": 1,
+      "start_date": "2026-11-19",
+      "end_date": "2026-11-20",
+      "hours": 2,
+      "name": ""
+    }
+  ],
+  "logged_time": [
+    {
+      "logged_time_id": "lt0001",
+      "people_id": 2,
+      "project_id": 301,
+      "phase_id": 401,
+      "date": "2026-11-02",
+      "hours": 5,
+      "notes": ""
+    },
+    {
+      "logged_time_id": "lt0002",
+      "people_id": 2,
+      "project_id": 301,
+      "phase_id": 401,
+      "date": "2026-11-03",
+      "hours": 5,
+      "notes": ""
+    },
+    {
+      "logged_time_id": "lt0003",
+      "people_id": 2,
+      "project_id": 301,
+      "phase_id": 401,
+      "date": "2026-11-04",
+      "hours": 4,
+      "notes": ""
+    },
+    {
+      "logged_time_id": "lt0004",
+      "people_id": 2,
+      "project_id": 301,
+      "phase_id": 401,
+      "date": "2026-11-05",
+      "hours": 5,
+      "notes": ""
+    },
+    {
+      "logged_time_id": "lt0005",
+      "people_id": 2,
+      "project_id": 301,
+      "phase_id": 401,
+      "date": "2026-11-06",
+      "hours": 5,
+      "notes": ""
+    },
+    {
+      "logged_time_id": "lt0006",
+      "people_id": 3,
+      "project_id": 301,
+      "phase_id": 401,
+      "date": "2026-11-02",
+      "hours": 2,
+      "notes": ""
+    },
+    {
+      "logged_time_id": "lt0007",
+      "people_id": 3,
+      "project_id": 301,
+      "phase_id": 401,
+      "date": "2026-11-03",
+      "hours": 3,
+      "notes": ""
+    },
+    {
+      "logged_time_id": "lt0008",
+      "people_id": 3,
+      "project_id": 301,
+      "phase_id": 401,
+      "date": "2026-11-04",
+      "hours": 2,
+      "notes": ""
+    },
+    {
+      "logged_time_id": "lt0009",
+      "people_id": 3,
+      "project_id": 301,
+      "phase_id": 401,
+      "date": "2026-11-05",
+      "hours": 3,
+      "notes": ""
+    },
+    {
+      "logged_time_id": "lt0010",
+      "people_id": 3,
+      "project_id": 301,
+      "phase_id": 401,
+      "date": "2026-11-06",
+      "hours": 2,
+      "notes": ""
+    },
+    {
+      "logged_time_id": "lt0011",
+      "people_id": 3,
+      "project_id": 301,
+      "phase_id": 402,
+      "date": "2026-11-09",
+      "hours": 2,
+      "notes": ""
+    },
+    {
+      "logged_time_id": "lt0012",
+      "people_id": 3,
+      "project_id": 301,
+      "phase_id": 402,
+      "date": "2026-11-10",
+      "hours": 2,
+      "notes": ""
+    },
+    {
+      "logged_time_id": "lt0013",
+      "people_id": 3,
+      "project_id": 301,
+      "phase_id": 402,
+      "date": "2026-11-11",
+      "hours": 3,
+      "notes": ""
+    },
+    {
+      "logged_time_id": "lt0014",
+      "people_id": 3,
+      "project_id": 301,
+      "phase_id": 402,
+      "date": "2026-11-12",
+      "hours": 2,
+      "notes": ""
+    },
+    {
+      "logged_time_id": "lt0015",
+      "people_id": 3,
+      "project_id": 301,
+      "phase_id": 402,
+      "date": "2026-11-13",
+      "hours": 2,
+      "notes": ""
+    },
+    {
+      "logged_time_id": "lt0016",
+      "people_id": 4,
+      "project_id": 301,
+      "phase_id": 402,
+      "date": "2026-11-09",
+      "hours": 1,
+      "notes": ""
+    },
+    {
+      "logged_time_id": "lt0017",
+      "people_id": 4,
+      "project_id": 301,
+      "phase_id": 402,
+      "date": "2026-11-10",
+      "hours": 1,
+      "notes": ""
+    },
+    {
+      "logged_time_id": "lt0018",
+      "people_id": 4,
+      "project_id": 301,
+      "phase_id": 402,
+      "date": "2026-11-11",
+      "hours": 1,
+      "notes": ""
+    },
+    {
+      "logged_time_id": "lt0019",
+      "people_id": 4,
+      "project_id": 301,
+      "phase_id": 402,
+      "date": "2026-11-12",
+      "hours": 1,
+      "notes": ""
+    },
+    {
+      "logged_time_id": "lt0020",
+      "people_id": 4,
+      "project_id": 301,
+      "phase_id": 402,
+      "date": "2026-11-13",
+      "hours": 1,
+      "notes": ""
+    }
+  ]
+}
