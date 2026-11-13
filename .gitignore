@@ -1,0 +1,11 @@
+*.pem
+*.env
+
+# Python virtual environment and caches
+.venv/
+__pycache__/
+*.pyc
+
+# Database backups
+*.sql.gz
+backups/
